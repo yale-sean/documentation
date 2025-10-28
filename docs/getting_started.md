@@ -1,4 +1,14 @@
-## Unity Side
+# Getting Started with SEAN 3
+
+SEAN 3's architecture consists of two main components: Unity and ROS noetic. In this guide, we will install both components on your system.
+
+## Prerequisites
+
+## System Requirements
+
+## Unity Setup
+
+Install Unity Hub from [https://unity.com/download](https://unity.com/download)
 
 Install Unity version 6000.0.47f1
 
@@ -104,3 +114,4 @@ tmuxinator
 1. Hit play in Unity, at which point you should see initialization messages in Unity console. 
 2. If you want to change the configuration for the next run, save config in SEAN Configurator GUI and `tmux kill-session` and unclick Play in Unity, then return to step 1.
 
+#
