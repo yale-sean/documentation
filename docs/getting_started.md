@@ -6,6 +6,8 @@ SEAN 3's architecture consists of two main components: Unity and ROS noetic. In 
 
 ## System Requirements
 
+SEAN 3 is tested on Windows 10/11 with WSL2 enabled. Ensure that you have WSL2 set up on your machine. You can follow the official Microsoft guide to install WSL2: [https://docs.microsoft.com/en-us/windows/wsl/install](https://docs.microsoft.com/en-us/windows/wsl/install). Install the Ubuntu 20.04 distribution in WSL for compatibility with ROS noetic.
+
 ## Unity Setup
 
 Install Unity Hub from [https://unity.com/download](https://unity.com/download)
