@@ -14,4 +14,7 @@
 ## TODOs:
 
 - Push branches to public repos:
-  -
+  - social_sim_unity hdrp-rl branch
+  - social_sim_ros hdrp-rl branch
+  - social_sim_multiagent hdrp-rl branch
+  - sim_ws hdrp-rl branch
