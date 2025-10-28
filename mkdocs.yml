@@ -1,0 +1,20 @@
+site_name: SEAN 3 Documentation
+site_description: Documentation for the SEAN 3 simulator.
+site_author: SEAN 3 Team
+copyright: Copyright &copy; 2025 SEAN 3 Team
+extra:
+  generator: false
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: light_green
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.footer
