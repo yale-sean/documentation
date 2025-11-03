@@ -1,26 +1,26 @@
-# Getting Started with SEAN 3
+### Install Unity
 
-SEAN 3's architecture consists of two main components: Unity and ROS noetic. In this guide, we will install both components on your system.
+- Important: Install Unity in Windows, not in WSL2.
 
-## Prerequisites
+- Download and install the [UnityHub](https://unity.com/download).
 
-## System Requirements
+  - Download and install UnityHub from: [https://unity3d.com/get-unity/download](https://unity3d.com/get-unity/download)
 
-SEAN 3 is tested on Windows 10/11 with WSL2 enabled. Ensure that you have WSL2 set up on your machine. You can follow the official Microsoft guide to install WSL2: [https://docs.microsoft.com/en-us/windows/wsl/install](https://docs.microsoft.com/en-us/windows/wsl/install). Install the Ubuntu 20.04 distribution in WSL for compatibility with ROS noetic.
+  - Login to UnityHub. If you do not have an account create a Unity account now.
 
-## Unity Setup
+### Checkout the SEAN3 Unity Project code
 
-Install Unity Hub from [https://unity.com/download](https://unity.com/download)
-
-Install Unity version 6000.0.47f1
-
-clone the following repo into some Unity Project folder
+Clone the following repo into some Unity Project folder
 
 ```
 git@github.com:yale-img/social_sim_unity.git
 ```
 
->make sure you are on **hdrp-rl** branch
+Make sure you are on **hdrp-rl** branch
+
+```
+git checkout -b hdrp-rl
+```
 
 Now, since the UnitySensors Package is a submodule in `~\social_sim_unity\Assets\ExternalAssets\UnitySensors`
 run
@@ -28,10 +28,19 @@ run
 ```
 git submodule update --init --recursive
 ```
+```
+git clone git@github.com/yale-img/UnitySensors.git
+```
 
-if you navigate to the UnitySensors repo, you should be tracking the  `dev_v2.0.4` branch
+if you navigate to the UnitySensors repo, you should be tracking the  `master` branch
+
+Run the project in Unity Hub by clicking on the project name: `social_sim_unity`, you may be prompted to install the correct version of Unity. Be sure to install the correct version of Unity which should be 6000.0.47f1
 
 ## WSL side with ROS noetic
+
+### Install ROS and Use Preconfigured Workspace.
+
+Install by following the ROS Noetic Setup Guide. If you run into any problem or want to learn more about ROS Noetic, see ROS Noetic. Then, you can use the sim_ws as a starting point for your catkin workspace. Start by checking out the repository.
 
 **Install preconfigured workspace**
 
@@ -70,14 +79,12 @@ uv sync
 uv pip install -e multi-agent-envs/
 ```
 
-Navigate to `/sim_ws/tmux/multi_agent_sean` folder to start tmuxinator
+To run a simple demo to demonstrate the new sensor capabilities navigate to `/sim_ws/tmux/multi_agent_sean` folder to start tmuxinator
 
 ```
 cd ~/sim_ws/tmux/multi_agent_sean
 tmuxinator
 ```
-
-
 
 ### The `.tmuxinator.yml` launches the following files
 
@@ -116,4 +123,3 @@ tmuxinator
 1. Hit play in Unity, at which point you should see initialization messages in Unity console. 
 2. If you want to change the configuration for the next run, save config in SEAN Configurator GUI and `tmux kill-session` and unclick Play in Unity, then return to step 1.
 
-#
