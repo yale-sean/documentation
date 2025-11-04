@@ -1,7 +1,16 @@
 # Reinforcement Learning Demo
 
-This demo shows how to train a reinforcement learning policy using SEAN 3 with multiple agents.
 
+Here we will show you how to run a simple learning demo to train a reinforcement learning policy using SEAN 3.0 with multiple agents.
+
+Open the `social_sim_unity` project and open the `Warehouse Scene` but do not hit Play yet.
+
+To run a simple demo to demonstrate the new sensor capabilities navigate to `/sim_ws/tmux/multi_agent_sean` folder to start tmuxinator
+
+```
+cd ~/sim_ws/tmux/multi_agent_sean
+tmuxinator
+```
 
 ### The `.tmuxinator.yml` launches the following files
 
