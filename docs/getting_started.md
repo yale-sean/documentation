@@ -28,14 +28,6 @@ Now, since this repo has several submodules run
 git submodule update --init --recursive
 ```
 
-Navigate to `~\social_sim_unity\Assets\ExternalAssets` and clone the following repo which should be tracking the  `master` branch
-
-```
-git clone git@github.com:yale-img/UnitySensors.git
-cd .\UnitySensors\
-git checkout -b master
-```
-
 Run the project in Unity Hub by clicking on the project name: `social_sim_unity`, you may be prompted to install the correct version of Unity. Be sure to install the correct version of Unity which should be 6000.0.47f1
 
 ## WSL side with ROS noetic
