@@ -1,13 +1,13 @@
-# SEAN 3
+# SEAN 3.0
 
-## [Getting started](getting_started.md)
+## [Getting Started](getting_started.md)
 
-Learn how to set up and use SEAN 3.
+Learn how to set up and use SEAN 3.0.
 
-## [Sensor Demo](sensor_demo.md)
+## [Velodyne Sensor Demo](sensor_demo.md)
 
-Run a simple interaction scenario using SEAN 3 with its built-in sensors.
+Run a simple interaction scenario using SEAN 3.0 with its built-in sensors.
 
 ## [Reinforcement Learning Demo](rl_demo.md)
 
-Run a reinforcement learning scenario using SEAN 3 with multiple agents.
+Run a reinforcement learning scenario using SEAN 3.0 with multiple agents.

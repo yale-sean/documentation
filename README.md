@@ -1,4 +1,4 @@
-# SEAN 3 Documentation
+# SEAN 3.0 Documentation
 
 ## Development
 

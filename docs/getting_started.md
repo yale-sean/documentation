@@ -8,7 +8,7 @@
 
   - Login to UnityHub. If you do not have an account create a Unity account now.
 
-### Checkout the SEAN3 Unity Project code
+### Checkout the SEAN 3.0 Unity Project code
 
 Clone the following repo into some Unity Project folder
 

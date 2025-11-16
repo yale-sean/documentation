@@ -1,6 +1,6 @@
 # Velodyne Sensor Demo
 
-Here we will show you how to run a simple demo to demonstrate the new velodyne sensor capabilities in SEAN3.0. 
+Here we will show you how to run a simple demo to demonstrate the new velodyne sensor capabilities in SEAN 3.0. 
 
 Open the `social_sim_unity` project and open the `Warehouse Scene` but do not hit Play yet.
 
