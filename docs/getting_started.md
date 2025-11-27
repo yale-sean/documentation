@@ -1,34 +1,52 @@
+## Setup
+
+This guide will walk you through setting up the simulation environment where Unity runs in Windows and ROS runs in a WSL2 virtual machine.
+
+### Dependencies
+
+- Confirm that your system is running Windows 10 or Windows 11.
+
+- Install [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+  - If you already have WSL installed, make sure it is running WSL 2. In PowerShell, set WSL 2 as the default version for newly installed Linux distributions: `wsl.exe --set-default-version 2`
+
+- Download and install [Ubuntu 20.04.06 LTS](https://apps.microsoft.com/detail/9mttcl66cpxj?hl=en-US&gl=US).
+
+  - In PowerShell, set the default Linux distribution that WSL commands will use to be Ubuntu 20.04: `wsl.exe --set-default Ubuntu-20.04`
+
+- Download and install [Git](https://git-scm.com/install/windows).
+
 ### Install Unity
 
-- Important: Install Unity in Windows, not in WSL2.
+> **Note**: Install Unity in Windows, not in WSL2.
 
-- Download and install the [UnityHub](https://unity.com/download).
+- Download and install [Unity Hub](https://unity.com/download).
 
-  - Download and install UnityHub from: [https://unity3d.com/get-unity/download](https://unity3d.com/get-unity/download)
+- Log in to Unity Hub. If you do not have an account, create a Unity account now.
 
-  - Login to UnityHub. If you do not have an account create a Unity account now.
+### Checkout & Open the SEAN 3.0 Unity Project
 
-### Checkout the SEAN 3.0 Unity Project code
+- Clone the [`social_sim_unity`](https://github.com/yale-img/social_sim_unity) into some Unity Project folder
 
-Clone the following repo into some Unity Project folder
+- Checkout the **hdrp-rl** branch: `git checkout hdrp-rl`
 
-```
-https://github.com/yale-img/social_sim_unity
-```
+- Initialize and update all submodules in the repository: `git submodule update --init --recursive`
 
-Make sure you are on **hdrp-rl** branch
+  > **Note**: If you run into errors such as:
+  > ```text
+  > error: inflate: data stream error (incorrect data check)
+  > error: unable to read sha1 file of <path/to/asset/file>
+  > ```
+  > Add the `--force` flag to this command:
+  >```text
+  > git submodule update --init --recursive --force
+  >```
 
-```
-git checkout -b hdrp-rl
-```
+- Launch Unity Hub and open the cloned `social_sim_unity` project
 
-Now, since this repo has several submodules run
+  - If the required Unity Editor version is not installed, Unity Hub will prompt you to install it when opening the Sean 3.0 project.
 
-```
-git submodule update --init --recursive
-```
-
-Run the project in Unity Hub by clicking on the project name: `social_sim_unity`, you may be prompted to install the correct version of Unity. Be sure to install the correct version of Unity which should be 6000.0.47f1
+  - For more details, see the Unity documentation on [adding an existing project from disk](https://docs.unity3d.com/hub/manual/AddProject.html#add-an-existing-project-from-your-disk) and [opening a project with a different Editor version](https://docs.unity3d.com/hub/manual/OpenProject.html#open-with-a-different-editor-version).  
 
 ## WSL side with ROS noetic
 
